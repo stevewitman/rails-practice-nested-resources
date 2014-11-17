@@ -15,7 +15,7 @@
         <tr>
           <td><%= passenger.name %></td>
           <td>
-            <em>link to the suitcases for this passenger here</em>
+            <%= link_to "suitcase", passenger_suitcases_path(passenger) %>
           </td>
         </tr>
       <% end %>
